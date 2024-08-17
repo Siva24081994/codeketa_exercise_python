@@ -1,0 +1,17 @@
+a = input()
+b = list(map(int,input().split()))
+c = []
+d = []
+for i in range (len(b)):
+  if b[i] not in c:
+    c.append(b[i])
+for j in range (len(c)):
+  b.count(c[j])
+  d.append(b.count(c[j]))
+if len(b) == len(c):
+  print("0")
+else:
+  for z in range (len(d)):
+    if d[z] == 1:
+      print(c[z])
+  
